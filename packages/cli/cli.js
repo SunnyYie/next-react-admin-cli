@@ -7,7 +7,6 @@ program
   .command('init')
   .description('初始化项目')
   .arguments('<name>', '项目名称')
-  .option('-t, --template <template>', '使用什么模板来创建')
   .action((name, options) => {
     require('./lib/init')(name, options)
   })
